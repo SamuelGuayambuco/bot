@@ -32,6 +32,14 @@ async def bien(ctx):
     await ctx.send ('oh que bien sigue feliz')
 
 @bot.command()
+async def cancion(ctx):
+    await ctx.send ('Aqui van 3 canciones mas escuchadas : DESPACITO de Luis Fonsi ft. Daddy Yankee,SEE YOU AGAIN de Wiz Khalifa feat. Charlie Puth,SHAPE OF YOU, de Ed Sheeran')
+
+@bot.command()
+async def color(ctx):
+    await ctx.send ('mis colores favoritos son el azul , el amarillo y el blanco , son los colores de python')
+
+@bot.command()
 async def password(ctx):
     await ctx.send (gen_pass(10))
 
@@ -40,4 +48,4 @@ async def joined(ctx, member: discord.Member):
     """Says when a member joined."""
     await ctx.send(f'{member.name} joined {discord.utils.format_dt(member.joined_at)}')
    
-bot.run("MTI3ODE1ODMwMTYzNjQ2MDYwNA.Gz_Jzh.zzTcuKQiLYlk78g9VupcS1vBhPThoNxiaxYEv8")
+bot.run("token")
